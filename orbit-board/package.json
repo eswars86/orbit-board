@@ -1,0 +1,36 @@
+{
+  "name": "orbit-board",
+  "version": "0.5.0",
+  "private": true,
+  "description": "A lightweight open-source Kanban board for teams — by OrbitLabs.",
+  "license": "MIT",
+  "author": "OrbitLabs",
+  "homepage": "https://github.com/OrbitLabs/orbit-board#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OrbitLabs/orbit-board.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install",
+    "check-env": "node scripts/check-env.js",
+    "seed": "node scripts/seed.js",
+    "build:client": "npm --prefix client run build",
+    "dev": "npm run build:client && node server/src/index.js",
+    "start": "node server/src/index.js",
+    "dev:server": "node server/src/index.js",
+    "dev:client": "npm --prefix client run dev",
+    "lint": "echo \"(lint placeholder — configure eslint here)\" && exit 0",
+    "test": "echo \"(no tests yet — see docs/faq.md)\" && exit 0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.4.5"
+  }
+}

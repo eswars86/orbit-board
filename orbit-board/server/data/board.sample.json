@@ -1,0 +1,38 @@
+[
+  {
+    "id": "board-1",
+    "title": "OrbitBoard Demo",
+    "columns": [
+      {
+        "id": "col-backlog",
+        "title": "Backlog",
+        "cards": [
+          { "id": "card-1", "title": "Set up CI pipeline", "description": "Add GitHub Actions workflow" },
+          { "id": "card-2", "title": "Seed sample data", "description": "Provide npm run seed" }
+        ]
+      },
+      {
+        "id": "col-in-progress",
+        "title": "In Progress",
+        "cards": [
+          { "id": "card-3", "title": "Build boards API", "description": "GET/POST/PUT/DELETE" },
+          { "id": "card-4", "title": "Board UI columns", "description": "Render columns + cards" }
+        ]
+      },
+      {
+        "id": "col-review",
+        "title": "Review",
+        "cards": [
+          { "id": "card-5", "title": "Write setup docs", "description": "SETUP.md walkthrough" }
+        ]
+      },
+      {
+        "id": "col-done",
+        "title": "Done",
+        "cards": [
+          { "id": "card-6", "title": "Design OrbitBoard logo", "description": "🛰️" }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,114 @@
+:root {
+  --bg: #0f1226;
+  --panel: #1a1f3d;
+  --panel-2: #232a52;
+  --text: #e8eaf6;
+  --muted: #9aa3c7;
+  --accent: #5b3df5;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--panel-2);
+}
+
+.app-header h1 { font-size: 20px; margin: 0; }
+.app-header .tag {
+  font-size: 12px;
+  color: var(--muted);
+  background: var(--panel-2);
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.board {
+  display: flex;
+  gap: 16px;
+  padding: 24px;
+  overflow-x: auto;
+  align-items: flex-start;
+}
+
+.column {
+  background: var(--panel);
+  border-radius: 12px;
+  min-width: 260px;
+  max-width: 280px;
+  padding: 12px;
+  flex: 0 0 auto;
+}
+
+.column h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  margin: 4px 6px 12px;
+}
+
+.card {
+  background: var(--panel-2);
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+
+.card .title { font-size: 14px; font-weight: 600; }
+.card .desc { font-size: 12px; color: var(--muted); margin-top: 4px; }
+
+.card-actions { margin-top: 8px; display: flex; gap: 8px; }
+.card button {
+  background: transparent;
+  border: 1px solid var(--panel);
+  color: var(--muted);
+  border-radius: 6px;
+  padding: 2px 8px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.card button:hover { border-color: var(--accent); color: var(--text); }
+
+.add-card { margin-top: 4px; }
+.add-card input {
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--panel-2);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 13px;
+}
+.add-card button {
+  margin-top: 6px;
+  background: var(--accent);
+  border: none;
+  color: white;
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.banner {
+  margin: 16px 24px 0;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #2a2140;
+  border: 1px solid #3a2d5c;
+  color: #d8ccff;
+  font-size: 13px;
+}
+.error { color: #ff9aa2; }
